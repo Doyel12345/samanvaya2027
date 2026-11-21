@@ -2,6 +2,8 @@
 
 Website for **SAMANVAYA 2027**, an international conference on pure and applied mathematics held from 31 May to 2 June 2027. The host is the School of Mathematical and Statistical Sciences (SMSS) at IIT Mandi, Kamand, Himachal Pradesh.
 
+**Live site:** https://iit-mandi-smss.github.io
+
 The site is plain HTML, CSS and JavaScript. It has no build step and no dependencies.
 
 ## Pages
