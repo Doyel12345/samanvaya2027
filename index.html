@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAMANVAYA 2027 | IIT Mandi</title>
+<meta name="description" content="SAMANVAYA 2027: an international conference on pure and applied mathematics, 31 May – 1 June 2027, School of Mathematical and Statistical Sciences, IIT Mandi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@600&display=swap">
+<link rel="icon" type="image/png" href="assets/smss-logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="SAMANVAYA 2027 home">
+      <img src="assets/smss-logo.png" alt="School of Mathematical and Statistical Sciences logo" width="44" height="40">
+      <span><b>SAMANVAYA 2027</b><span>IIT Mandi · 31 May – 1 June 2027</span></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="committees.html">Committees</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
+        <li><a href="call-for-papers.html">Call for Papers</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<style>
+.hero{position:relative;background:linear-gradient(180deg,#0b2846 0%,#163f6e 62%,#2a5f95 100%);color:var(--onDeep);overflow:hidden;min-height:clamp(560px,78svh,720px);display:flex;flex-direction:column}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(180deg,#000 0%,transparent 70%)}
+.hero .inner{position:relative;z-index:2;padding:clamp(40px,7vw,96px) max(5vw,16px) 0;max-width:1240px;margin-inline:auto;width:100%;box-sizing:content-box}
+.hero .deva{font:600 clamp(20px,2.2vw,26px)/1 "Noto Serif Devanagari",var(--serif);color:#ffd2d9;margin:0 0 14px}
+.hero h1{font-size:clamp(36px,10vw,112px);line-height:.95;letter-spacing:-.02em;margin:0 0 .18em;font-weight:700}
+.hero .sub{font:500 clamp(18px,2vw,24px)/1.3 var(--sans);color:#dbe7f3;max-width:34ch;margin:0 0 22px}
+.hero .when{display:flex;flex-wrap:wrap;gap:8px 28px;font-size:17px;margin-bottom:26px;color:#fff}
+.hero .when b{font-weight:600}
+.hero .btn.ghost{color:#fff}
+.hero .ridge{position:absolute;left:0;right:0;bottom:0;height:46%;z-index:1}
+.sun{position:absolute;z-index:0;right:clamp(24px,16vw,260px);bottom:calc(46% - 30px);width:clamp(70px,9vw,120px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 35%,#ff6f83,#c3132f 70%);box-shadow:0 0 0 14px rgba(195,19,47,.13),0 0 0 32px rgba(195,19,47,.06)}
+.formula{position:absolute;z-index:1;right:max(5vw,16px);top:28px;font:italic 15px var(--serif);color:rgba(255,255,255,.55)}
+.countdown{display:inline-block;margin-top:18px;font-size:14.5px;color:#ffd2d9}
+@media(max-width:700px){.sun{bottom:calc(36vw - 34px);right:22%;width:52px}.formula{display:none}.hero .ridge{height:36vw}.hero{min-height:0;padding-bottom:42vw}}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(10.5em,1fr));gap:0;border-top:2px solid var(--ink);border-bottom:1px solid var(--line)}
+.facts div{padding:18px 18px 18px 0}
+.facts b{display:block;font:600 clamp(30px,3.6vw,44px)/1 var(--serif);color:var(--blue2)}
+.facts span{color:var(--muted);font-size:15px}
+.tracks{display:grid;grid-template-columns:repeat(auto-fit,minmax(15em,1fr));gap:12px}
+@media(min-width:1100px){.tracks{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.tracks a{display:flex;align-items:center;min-height:64px;padding:14px 18px;border:1px solid var(--line);border-radius:var(--r);background:var(--card);color:var(--ink);text-decoration:none;font-weight:600;border-left:4px solid var(--blue2)}
+.tracks a.app{border-left-color:var(--green)}
+.tracks a:hover{border-color:var(--red);border-left-color:var(--red);color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--muted);margin-top:14px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.kn{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:14px}
+.kn .person{align-items:center;text-align:center}
+.kn .avatar{width:min(96px,100%);height:auto;aspect-ratio:1}
+@media(max-width:980px){.kn{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.place{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.place .ridge{position:relative;height:240px;border-radius:var(--r);overflow:hidden;background:linear-gradient(180deg,#bfe0f6,#e9f4fb)}
+@media(max-width:700px){.place{grid-template-columns:minmax(0,1fr)}}
+</style>
+
+<section class="hero" aria-label="Conference banner">
+  <div class="sun" aria-hidden="true"></div>
+  <div class="formula" aria-hidden="true">y = Σ a<sub>k</sub> sin(kx + φ<sub>k</sub>)</div>
+  <div class="inner">
+    <p class="deva" lang="sa">समन्वय · synthesis</p>
+    <h1>SAMANVAYA 2027</h1>
+    <p class="sub">International Conference on Pure and Applied Mathematics</p>
+    <div class="when"><span><b>31 May – 1 June 2027</b></span><span>IIT Mandi, Kamand, Himachal Pradesh</span></div>
+    <div class="btns">
+      <a class="btn primary" href="call-for-papers.html">Submit an abstract</a>
+      <a class="btn ghost" href="registration.html">Register</a>
+    </div>
+    <span class="countdown" data-countdown="2027-05-31T09:00:00+05:30"></span>
+  </div>
+  <div class="ridge" data-seed="2027" data-layers="4" data-fills="#3a6fa3,#2a5788,#1b406b,var(--bg)"></div>
+</section>
+
+<section class="band" style="padding-top:clamp(12px,2vw,28px)">
+  <div class="wrap">
+    <div class="facts">
+      <div><b>2</b><span>days of mathematics</span></div>
+      <div><b>8</b><span>keynote lectures</span></div>
+      <div><b>20</b><span>contributed talks in two tracks</span></div>
+      <div><b>10</b><span>areas, pure to applied</span></div>
+      <div><b>1</b><span>poster session for young researchers</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" style="padding-top:0">
+  <div class="wrap split">
+    <div>
+      <h2>Bringing the branches of mathematics into one room</h2>
+      <p class="lede">SAMANVAYA, Sanskrit for synthesis or harmony, is a two-day conference hosted by the School of Mathematical and Statistical Sciences at IIT Mandi.</p>
+      <p>It brings together researchers working across pure mathematics, applied mathematics and statistics, from algebra and topology to numerical methods, data science and mathematical modelling. Keynote lectures by leading mathematicians run alongside contributed talks in two parallel tracks and a poster session that gives PhD students and early-career researchers a place to present their work.</p>
+      <p>The conference takes place on the Kamand campus of IIT Mandi, in the Uhl valley of the Himalayan foothills.</p>
+      <p><a href="about.html">More about the conference</a></p>
+    </div>
+    <div class="card">
+      <h3>Important dates</h3>
+      <ul class="dates">
+        <li><time datetime="2026-12-01">1 Dec 2026</time><div>Call for abstracts opens</div></li>
+        <li><time datetime="2027-02-15">15 Feb 2027</time><div>Abstract submission deadline (talks and posters)</div></li>
+        <li><time datetime="2027-03-15">15 Mar 2027</time><div>Notification of acceptance</div></li>
+        <li><time datetime="2027-04-10">10 Apr 2027</time><div>Early-bird registration closes</div></li>
+        <li><time datetime="2027-05-10">10 May 2027</time><div>Registration closes</div></li>
+        <li class="key"><time datetime="2027-05-31">31 May 2027</time><div>Conference begins (ends 1 June)</div></li>
+      </ul>
+      <p class="note">Dates are tentative and may be revised.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Ten areas, one conference</h2>
+      <p>Contributions are welcome in every area of mathematics and statistics. Talks are grouped into two parallel tracks.</p>
+    </div>
+    <div class="tracks">
+      <a href="call-for-papers.html#scope">Algebra &amp; Number Theory</a>
+      <a href="call-for-papers.html#scope">Analysis &amp; Operator Theory</a>
+      <a href="call-for-papers.html#scope">Geometry &amp; Topology</a>
+      <a href="call-for-papers.html#scope">Discrete Mathematics &amp; Combinatorics</a>
+      <a class="app" href="call-for-papers.html#scope">Differential Equations &amp; Dynamical Systems</a>
+      <a class="app" href="call-for-papers.html#scope">Numerical Analysis &amp; Scientific Computing</a>
+      <a class="app" href="call-for-papers.html#scope">Probability, Statistics &amp; Data Science</a>
+      <a class="app" href="call-for-papers.html#scope">Optimisation &amp; Operations Research</a>
+      <a class="app" href="call-for-papers.html#scope">Mathematical Modelling</a>
+      <a class="app" href="call-for-papers.html#scope">Mathematics of AI &amp; Machine Learning</a>
+    </div>
+    <div class="legend"><span><i style="background:var(--blue2)"></i>Track A · Pure Mathematics</span><span><i style="background:var(--green)"></i>Track B · Applied Mathematics &amp; Statistics</span></div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Eight keynote lectures</h2>
+      <p>Four keynotes each day by distinguished mathematicians from India and abroad. Names will be announced as speakers confirm.</p>
+    </div>
+    <div class="kn">
+      <div class="person"><div class="avatar">K1</div><span class="name">Speaker 1</span><span class="aff">To be announced</span></div>
+      <div class="person"><div class="avatar">K2</div><span class="name">Speaker 2</span><span class="aff">To be announced</span></div>
+      <div class="person"><div class="avatar">K3</div><span class="name">Speaker 3</span><span class="aff">To be announced</span></div>
+      <div class="person"><div class="avatar">K4</div><span class="name">Speaker 4</span><span class="aff">To be announced</span></div>
+      <div class="person"><div class="avatar">K5</div><span class="name">Speaker 5</span><span class="aff">To be announced</span></div>
+      <div class="person"><div class="avatar">K6</div><span class="name">Speaker 6</span><span class="aff">To be announced</span></div>
+      <div class="person"><div class="avatar">K7</div><span class="name">Speaker 7</span><span class="aff">To be announced</span></div>
+      <div class="person"><div class="avatar">K8</div><span class="name">Speaker 8</span><span class="aff">To be announced</span></div>
+    </div>
+    <div class="btns" style="margin-top:28px"><a class="btn ghost" href="speakers.html">Speakers and programme</a></div>
+  </div>
+</section>
+
+<section class="band alt">
+  <div class="wrap place">
+    <div class="ridge" data-seed="175075" data-layers="4" data-fills="#9cc3e2,#5f93bf,#2d5b47,#1f4434" aria-hidden="true"></div>
+    <div>
+      <h2>A campus in the Himalayan foothills</h2>
+      <p>IIT Mandi's Kamand campus sits beside the Uhl river, about 15 km from Mandi town. Days in late May are warm, in the low 30s °C, with milder evenings; it is a good time to visit Prashar Lake, Rewalsar and the Kullu valley before or after the conference.</p>
+      <div class="btns"><a class="btn ghost" href="travel.html">Travel and attractions</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band deep">
+  <div class="wrap split" style="align-items:center">
+    <div>
+      <h2>Present your work at SAMANVAYA 2027</h2>
+      <p class="lede">Abstracts for contributed talks and posters are due by 15 February 2027.</p>
+    </div>
+    <div class="btns">
+      <a class="btn primary" href="call-for-papers.html">Call for papers</a>
+      <a class="btn ghost" href="contact.html">Contact the organisers</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <div class="flogo"><img src="assets/smss-logo.png" alt="" width="62" height="56"><div class="fname">SAMANVAYA 2027</div></div>
+      <p>International Conference on Pure and Applied Mathematics<br>31 May – 1 June 2027<br>School of Mathematical and Statistical Sciences<br>Indian Institute of Technology Mandi, Kamand, Himachal Pradesh 175075</p>
+    </div>
+    <div>
+      <h4>Conference</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="committees.html">Committees</a></li>
+        <li><a href="speakers.html">Speakers &amp; programme</a></li>
+        <li><a href="call-for-papers.html">Call for papers &amp; posters</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Participate</h4>
+      <ul>
+        <li><a href="registration.html">Registration &amp; submission</a></li>
+        <li><a href="travel.html">Travel &amp; attractions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="mailto:samanvaya2027@iitmandi.ac.in">samanvaya2027@iitmandi.ac.in</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="legal">
+    <span>© 2027 School of Mathematical and Statistical Sciences, IIT Mandi</span>
+    <span>Placeholder details are marked and will be updated.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
