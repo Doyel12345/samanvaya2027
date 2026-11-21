@@ -54,6 +54,11 @@
 .hero .btn{text-shadow:none}
 .hero .btn.ghost{color:#fff;background:rgba(8,26,46,.35)}
 .countdown{display:inline-block;margin-top:18px;font-size:14.5px;color:#ffd2d9}
+.inst{z-index:3;background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 6px 24px rgba(0,0,0,.25);line-height:0}
+.inst img{width:clamp(130px,13vw,170px);height:auto}
+.inst-d{position:absolute;top:clamp(18px,2.5vw,32px);right:max(5vw,16px,calc((100% - 1240px)/2))}
+.inst-m{display:none}
+@media(max-width:700px){.inst-d{display:none}.inst-m{display:inline-block;margin:0 0 18px;padding:8px 10px}.inst img{width:110px}.hero .inner{padding-top:20px}}
 .dots{position:absolute;z-index:3;right:max(5vw,16px);bottom:22px;display:flex;gap:6px}
 .dots button{width:44px;height:44px;border:0;background:none;padding:0;cursor:pointer;display:grid;place-items:center}
 .dots button::before{content:"";width:28px;height:4px;border-radius:2px;background:rgba(255,255,255,.45);transition:background .3s}
@@ -86,7 +91,9 @@
     <div class="slide active" style="background-image:url(assets/images/campus-1.jpg);background-position:40% 60%" data-caption="IIT Mandi Kamand campus and the Uhl river"></div>
     <div class="slide" style="background-image:url(assets/images/campus-2.jpg);background-position:62% 55%" data-caption="Academic buildings, Kamand campus"></div>
   </div>
+  <a class="inst inst-d" href="https://iitmandi.ac.in" aria-label="Indian Institute of Technology Mandi"><img src="assets/iit-mandi-logo.png" alt="Indian Institute of Technology Mandi logo" width="477" height="332"></a>
   <div class="inner">
+  <a tabindex="-1" aria-hidden="true" class="inst inst-m" href="https://iitmandi.ac.in" aria-label="Indian Institute of Technology Mandi"><img src="assets/iit-mandi-logo.png" alt="Indian Institute of Technology Mandi logo" width="477" height="332"></a>
     <p class="deva" lang="sa">समन्वय</p>
     <h1>SAMANVAYA 2027</h1>
     <p class="sub">International Conference on Pure and Applied Mathematics</p>
